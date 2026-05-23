@@ -28,10 +28,9 @@ function App() {
     };
   }, []);
 
-  // Derive unique faculties dynamically from f_tag of jobs
   const faculties = [
     ALL_FACULTIES_OPTION,
-    ...new Set(jobs.flatMap((job) => job.f_tag || []))
+    ...new Set(jobs.flatMap((job) => job.f_tag || [])),
   ];
 
   // Theme effect
@@ -56,7 +55,7 @@ function App() {
     }
   };
 
-  // Filter logic - show all when 'Toate' is selected, otherwise filter by f_tag
+  // Filter logic
   const filteredJobs = jobs.filter((job) => {
     if (student.faculty !== ALL_FACULTIES_OPTION) {
       const tags = job.f_tag || [];
@@ -70,7 +69,7 @@ function App() {
   return (
     <div
       className="bg-bg text-text transition-colors duration-200 flex flex-col"
-      style={{ maxWidth: "300px", width: "100%", minHeight: "100vh" }}
+      style={{ maxWidth: "300px", width: "100%" }}
     >
       <Header
         theme={theme}
@@ -90,7 +89,9 @@ function App() {
           <JobsPage
             filteredJobs={filteredJobs}
             totalJobsCount={jobs.length}
-            onResetFilter={() => setStudent({ ...student, faculty: ALL_FACULTIES_OPTION })}
+            onResetFilter={() =>
+              setStudent({ ...student, faculty: ALL_FACULTIES_OPTION })
+            }
             onApply={handleApplyStart}
           />
         )}
