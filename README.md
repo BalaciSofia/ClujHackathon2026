@@ -29,6 +29,10 @@ Colectăm toate locurile de muncă de pe [peviitor.ro](https://peviitor.ro) și,
 - **[Cluj Hackathon 2026: Peste 250 de programatori, ingineri și antreprenori, în misiunea de a Digitaliza România în 48 de ore](https://www.zcj.ro/tehnologie/cluj-hackathon-2026-peste-250-de-programatori-ingineri-si-antreprenori-in-misiunea-de-a-digitaliza-romania-in-48-de-ore--295638.html)** — Ziarul de Cluj
 - **[Hackathon la Cluj pentru modernizarea administrației și digitalizarea României](https://cluj1.ro/hackathon-la-cluj-pentru-modernizarea-administratiei-si-digitalizarea-romaniei-rus-digitalizarea-romaniei-se-face-prin-oameni-buni-si-cod-bun/)** — Cluj1
 
+## Licență
+
+Acest proiect este distribuit sub licența **MIT**. Vezi fișierul [LICENSE](LICENSE).
+
 ## Contribuții
 
-Contribuțiile sunt binevenite!
+Contribuțiile sunt binevenite! Vezi [CONTRIBUTING.md](CONTRIBUTING.md) și [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) pentru detalii.
