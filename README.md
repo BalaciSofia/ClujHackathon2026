@@ -21,6 +21,20 @@ Colectăm toate locurile de muncă de pe [peviitor.ro](https://peviitor.ro) și,
 4. Match-uim tag-urile joburilor cu profilurile instituțiilor de învățământ
 5. Generăm recomandări personalizate per instituție
 
+## Widget Incorporabil
+
+Widget-ul de joburi **poate fi încorporat pe site-ul oricărei facultăți** printr-un simplu `<iframe>`. O singură linie de cod este suficientă:
+
+```html
+<iframe
+  src="https://peviitor-ro.github.io/ClujHackathon2026/#/widget?tag=FACULTATE_TAG&title=Titlu&color=culoare"
+  width="100%"
+  height="650px"
+></iframe>
+```
+
+Parametrii se personalizează în funcție de facultate: `tag` pentru filtrarea joburilor, `title` pentru titlul afișat, `color` pentru tema vizuală. Vezi [documentația tehnică](docs/tehnica.md) pentru detalii complete.
+
 ## Articole & mențiuni
 
 - **[Asociația Oportunități și Cariere — Cluj Hackathon 2026](https://www.linkedin.com/posts/asociatia-oportunitati-si-cariere_clujhackathon-clujhackathon2026-opensource-activity-7463907374190309376--UUN)** — Postare LinkedIn despre participarea echipei la hackathon
