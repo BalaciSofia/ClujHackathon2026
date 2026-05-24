@@ -18,7 +18,7 @@ jobs:
           node-version: 20
 
       - name: Install opencode
-        run: npm install -g @opencode/cli
+        run: npm install -g opencode-ai@latest
 
       - name: Run all agents
         run: node scripts/fetch_agent_jobs.mjs --all
