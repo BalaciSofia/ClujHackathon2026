@@ -15,7 +15,7 @@
       "UBVFMIIA"
     ],
     "matchPercentage": 95,
-    "reason": "Internship plătit în software development, perfect pentru nivelul meu"
+    "reason": "Internship plătit în software development perfect pentru nivelul meu"
   },
   {
     "url": "https://www.bestjobs.eu/loc-de-munca/junior-software-developer-91",
@@ -32,8 +32,8 @@
     "f_tag": [
       "UBVFMIIA"
     ],
-    "matchPercentage": 92,
-    "reason": "Poziție junior, skilluri generale de programare, potrivit"
+    "matchPercentage": 90,
+    "reason": "Poziție junior de developer, exact ce caut"
   },
   {
     "url": "https://www.bestjobs.eu/loc-de-munca/software-developer-software-engineer-helpdesk-17",
@@ -50,8 +50,8 @@
     "f_tag": [
       "UBVFMIIA"
     ],
-    "matchPercentage": 50,
-    "reason": "Componentă de dev, dar combinată cu helpdesk; salariu mic"
+    "matchPercentage": 65,
+    "reason": "Partea de software developer e relevantă, dar helpdesk-ul e mai puțin"
   },
   {
     "url": "https://www.bestjobs.eu/loc-de-munca/c-software-developer-174",
@@ -68,8 +68,8 @@
     "f_tag": [
       "UBVFMIIA"
     ],
-    "matchPercentage": 85,
-    "reason": "C#/.Net în skilluri, poziție mid-level abordabilă"
+    "matchPercentage": 70,
+    "reason": "C# e în skilluri, poziție de developer, dar nu știu nivelul exact"
   },
   {
     "url": "https://www.bestjobs.eu/loc-de-munca/software-tester-414",
@@ -86,8 +86,8 @@
     "f_tag": [
       "UBVFMIIA"
     ],
-    "matchPercentage": 78,
-    "reason": "Testare inclusă în competențe, salariu mic dar relevant"
+    "matchPercentage": 85,
+    "reason": "Testare/validare e în competențe, poziție bună pentru mine"
   },
   {
     "url": "https://www.bestjobs.eu/loc-de-munca/software-developer-853",
@@ -104,26 +104,8 @@
     "f_tag": [
       "UBVFMIIA"
     ],
-    "matchPercentage": 70,
-    "reason": "Dezvoltare software generală, dar salariu foarte mic (305 RON)"
-  },
-  {
-    "url": "https://www.bestjobs.eu/loc-de-munca/software-development-intern-3",
-    "title": "Software Development Intern",
-    "company": "GDROMANIA",
-    "location": [
-      "Remote"
-    ],
-    "salary": [
-      "500-800 RON"
-    ],
-    "date": "2026-05-14T00:00:00Z",
-    "status": "published",
-    "f_tag": [
-      "UBVFMIIA"
-    ],
-    "matchPercentage": 97,
-    "reason": "Internship remote, exact ce caut"
+    "matchPercentage": 55,
+    "reason": "Developer, dar salariu foarte mic și descriere vagă"
   },
   {
     "url": "https://www.bestjobs.eu/loc-de-munca/aws-engineer-2",
@@ -140,8 +122,8 @@
     "f_tag": [
       "UBVFMIIA"
     ],
-    "matchPercentage": 60,
-    "reason": "Cloud/AWS relevant, dar posibil să necesite experiență"
+    "matchPercentage": 70,
+    "reason": "Cloud e în skilluri, poziție tehnică relevantă"
   },
   {
     "url": "https://www.bestjobs.eu/loc-de-munca/devops-engineer-721",
@@ -158,8 +140,8 @@
     "f_tag": [
       "UBVFMIIA"
     ],
-    "matchPercentage": 55,
-    "reason": "DevOps tangențial cu competențele, dar entry-level posibil"
+    "matchPercentage": 80,
+    "reason": "DevOps/Cloud/Rețele se potrivesc cu skillurile mele"
   },
   {
     "url": "https://www.bestjobs.eu/loc-de-munca/devops-engineer-aws-specialist",
@@ -176,8 +158,8 @@
     "f_tag": [
       "UBVFMIIA"
     ],
-    "matchPercentage": 50,
-    "reason": "DevOps/AWS, parțial relevant"
+    "matchPercentage": 80,
+    "reason": "DevOps și AWS, relevante pentru competențele mele"
   },
   {
     "url": "https://www.bestjobs.eu/loc-de-munca/qa-engineer-tester-8",
@@ -194,44 +176,26 @@
     "f_tag": [
       "UBVFMIIA"
     ],
-    "matchPercentage": 82,
-    "reason": "Testare/QA în competențe, poziție abordabilă"
+    "matchPercentage": 90,
+    "reason": "QA/Testare perfect pentru competențele mele în testare și validare"
   },
   {
-    "url": "https://www.bestjobs.eu/loc-de-munca/middle-data-engineer-5",
-    "title": "Middle Data Engineer",
-    "company": "BRIGHTGROVE",
+    "url": "https://www.bestjobs.eu/loc-de-munca/shopify-developer-3",
+    "title": "Shopify Developer",
+    "company": "LIFEPHARM",
     "location": [
-      "Bucuresti"
+      "Remote"
     ],
     "salary": [
-      "1660-1830 RON"
+      "3000 RON"
     ],
     "date": "2026-05-14T00:00:00Z",
     "status": "published",
     "f_tag": [
       "UBVFMIIA"
     ],
-    "matchPercentage": 70,
-    "reason": "Data engineering, AI/ML relevant, nivel mid abordabil"
-  },
-  {
-    "url": "https://www.bestjobs.eu/loc-de-munca/qa-engineer-tester-7",
-    "title": "QA Engineer/Tester",
-    "company": "STARBYTE",
-    "location": [
-      "Bucuresti"
-    ],
-    "salary": [
-      "1410-1555 RON"
-    ],
-    "date": "2026-05-14T00:00:00Z",
-    "status": "published",
-    "f_tag": [
-      "UBVFMIIA"
-    ],
-    "matchPercentage": 82,
-    "reason": "Testare/QA, potrivit pentru nivelul meu"
+    "matchPercentage": 60,
+    "reason": "Web development, relevant dar platformă specifică Shopify"
   },
   {
     "url": "https://8ore.ro/locuri-de-munca/wordpress-developer",
@@ -248,8 +212,170 @@
     "f_tag": [
       "UBVFMIIA"
     ],
+    "matchPercentage": 60,
+    "reason": "Web development, training oferit, Brasov (orasul meu). Nu am experienta WordPress dar am skilluri web (Angular/.Net) si e oportunitate de invatare."
+  },
+  {
+    "url": "https://www.bestjobs.eu/loc-de-munca/frontend-developer-384",
+    "title": "Frontend Developer",
+    "company": "CURRICULO",
+    "location": [
+      "Remote"
+    ],
+    "salary": [
+      "1000-1200 RON"
+    ],
+    "date": "2026-05-14T00:00:00Z",
+    "status": "published",
+    "f_tag": [
+      "UBVFMIIA"
+    ],
+    "matchPercentage": 85,
+    "reason": "Frontend development cu Angular/.Net - se potriveste direct cu skillurile mele. Remote si salariu ok pentru junior."
+  },
+  {
+    "url": "https://www.bestjobs.eu/loc-de-munca/java-developer-1192",
+    "title": "Java Developer",
+    "company": "WESTACO",
+    "location": [
+      "Remote"
+    ],
+    "salary": [
+      "1500-3000 RON"
+    ],
+    "date": "2026-05-09T00:00:00Z",
+    "status": "published",
+    "f_tag": [
+      "UBVFMIIA"
+    ],
+    "matchPercentage": 85,
+    "reason": "Java este un skill principal. Remote, salariu bun pentru internship/junior."
+  },
+  {
+    "url": "https://www.bestjobs.eu/loc-de-munca/c-developer-307",
+    "title": "C++ Developer",
+    "company": "ALLEVO",
+    "location": [
+      "Remote"
+    ],
+    "salary": [
+      "880-970 RON"
+    ],
+    "date": "2026-05-14T00:00:00Z",
+    "status": "published",
+    "f_tag": [
+      "UBVFMIIA"
+    ],
+    "matchPercentage": 85,
+    "reason": "C/C++ este un skill principal. Remote, salariu mic dar potrivit pentru junior."
+  },
+  {
+    "url": "https://www.bestjobs.eu/loc-de-munca/react-native-developer-70",
+    "title": "React Native Developer",
+    "company": "MYTRACK",
+    "location": [
+      "Remote"
+    ],
+    "salary": [
+      "2500 RON"
+    ],
+    "date": "2026-05-14T00:00:00Z",
+    "status": "published",
+    "f_tag": [
+      "UBVFMIIA"
+    ],
+    "matchPercentage": 75,
+    "reason": "Mobile development - am Android/Unity. React Native nu e in skilluri dar mobile da. Remote."
+  },
+  {
+    "url": "https://www.bestjobs.eu/loc-de-munca/mobile-developer-63",
+    "title": "Mobile Developer",
+    "company": "C4MEDIA",
+    "location": [
+      "Remote"
+    ],
+    "salary": [
+      "1075-1190 RON"
+    ],
+    "date": "2026-05-03T00:00:00Z",
+    "status": "published",
+    "f_tag": [
+      "UBVFMIIA"
+    ],
+    "matchPercentage": 80,
+    "reason": "Mobile development (Android) - se potriveste. Remote."
+  },
+  {
+    "url": "https://www.bestjobs.eu/loc-de-munca/web-developer-php-18",
+    "title": "Web Developer PHP",
+    "company": "WORKLETO",
+    "location": [
+      "Remote"
+    ],
+    "salary": [
+      "1000-2000 RON"
+    ],
+    "date": "2026-05-14T00:00:00Z",
+    "status": "published",
+    "f_tag": [
+      "UBVFMIIA"
+    ],
+    "matchPercentage": 60,
+    "reason": "Web development, dar PHP nu e in skillurile mele principale (am Angular/.Net). Remote si accesibil."
+  },
+  {
+    "url": "https://www.bestjobs.eu/loc-de-munca/fullstack-php-web-developer-1",
+    "title": "Fullstack PHP Web Developer",
+    "company": "MDUNDO.COM",
+    "location": [
+      "Remote"
+    ],
+    "salary": [
+      "1500 RON"
+    ],
+    "date": "2026-05-14T00:00:00Z",
+    "status": "published",
+    "f_tag": [
+      "UBVFMIIA"
+    ],
     "matchPercentage": 55,
-    "reason": "Web development, oferă training, parțial relevant"
+    "reason": "Fullstack web, dar PHP. Skillurile web se aplica partial. Remote, salariu mic."
+  },
+  {
+    "url": "https://www.bestjobs.eu/loc-de-munca/angajam-programator-full-stack",
+    "title": "Angajam Programator Full Stack",
+    "company": "ALECU ALEXANDRU",
+    "location": [
+      "Bucuresti"
+    ],
+    "salary": [
+      "1400-1900 RON"
+    ],
+    "date": "2026-05-14T00:00:00Z",
+    "status": "published",
+    "f_tag": [
+      "UBVFMIIA"
+    ],
+    "matchPercentage": 75,
+    "reason": "Full stack development - am web (Angular/.Net). Bucuresti."
+  },
+  {
+    "url": "https://www.bestjobs.eu/loc-de-munca/programator-python-14",
+    "title": "Programator Python",
+    "company": "CELLTECH MOBILE SERVICES",
+    "location": [
+      "Buftea, Romania"
+    ],
+    "salary": [
+      "1250-1385 RON"
+    ],
+    "date": "2026-05-14T00:00:00Z",
+    "status": "published",
+    "f_tag": [
+      "UBVFMIIA"
+    ],
+    "matchPercentage": 85,
+    "reason": "Python este un skill principal. Buftea."
   },
   {
     "url": "https://www.bestjobs.eu/loc-de-munca/ai-instructor-applied-ai-coach-b2b-1",
@@ -266,8 +392,8 @@
     "f_tag": [
       "UBVFMIIA"
     ],
-    "matchPercentage": 70,
-    "reason": "Rol AI, remote, salariu bun pentru internship/junior"
+    "matchPercentage": 60,
+    "reason": "AI-related, dar rol de coaching/instructaj, nu hands-on development. Salariu bun, remote, skill-urile de AI se pot aplica."
   },
   {
     "url": "https://www.bestjobs.eu/loc-de-munca/dezvoltator-aplicatii-ai",
@@ -284,8 +410,26 @@
     "f_tag": [
       "UBVFMIIA"
     ],
-    "matchPercentage": 90,
-    "reason": "Dezvoltare AI, remote, perfect pentru skill-urile mele"
+    "matchPercentage": 85,
+    "reason": "Rol perfect pentru skill-urile mele: AI, programare. Remote și salariu decent pentru junior."
+  },
+  {
+    "url": "https://www.bestjobs.eu/loc-de-munca/genai-agentic-ai-solution-architect",
+    "title": "GenAI Agentic AI Solution Architect",
+    "company": "MADIFF",
+    "location": [
+      "Remote"
+    ],
+    "salary": [
+      "3200 RON"
+    ],
+    "date": "2026-05-08T00:00:00Z",
+    "status": "published",
+    "f_tag": [
+      "UBVFMIIA"
+    ],
+    "matchPercentage": 45,
+    "reason": "Rol avansat de arhitect AI, probabil peste nivel junior/mid, dar skill-urile se potrivesc."
   },
   {
     "url": "https://www.bestjobs.eu/loc-de-munca/softwareentwickler",
@@ -303,25 +447,7 @@
       "UBVFMIIA"
     ],
     "matchPercentage": 75,
-    "reason": "Dezvoltare software, remote, potrivit pentru junior"
-  },
-  {
-    "url": "https://www.bestjobs.eu/loc-de-munca/data-specialist-10",
-    "title": "Data Specialist",
-    "company": "KLIPPA AI BACK OFFICE",
-    "location": [
-      "Brasov"
-    ],
-    "salary": [
-      "550 RON"
-    ],
-    "date": "2026-05-14T00:00:00Z",
-    "status": "published",
-    "f_tag": [
-      "UBVFMIIA"
-    ],
-    "matchPercentage": 50,
-    "reason": "Rol în date/AI, dar salariu foarte mic"
+    "reason": "Rol de dezvoltare software cu componentă AI. Se potrivește bine cu skill-urile mele."
   },
   {
     "url": "https://www.bestjobs.eu/loc-de-munca/python-developer-for-ai-startup",
@@ -339,7 +465,25 @@
       "UBVFMIIA"
     ],
     "matchPercentage": 90,
-    "reason": "Python + AI startup, perfect pentru profilul meu"
+    "reason": "Python + AI startup — se potrivește perfect cu skill-urile mele de programare și AI."
+  },
+  {
+    "url": "https://www.bestjobs.eu/loc-de-munca/data-specialist-10",
+    "title": "Data Specialist",
+    "company": "KLIPPA AI BACK OFFICE",
+    "location": [
+      "Brasov"
+    ],
+    "salary": [
+      "550 RON"
+    ],
+    "date": "2026-05-14T00:00:00Z",
+    "status": "published",
+    "f_tag": [
+      "UBVFMIIA"
+    ],
+    "matchPercentage": 65,
+    "reason": "Rol de date cu componentă AI. Salariu mic dar relevant pentru skill-urile mele."
   },
   {
     "url": "https://www.bestjobs.eu/loc-de-munca/ai-enthusiast-data-devloper",
@@ -356,8 +500,26 @@
     "f_tag": [
       "UBVFMIIA"
     ],
-    "matchPercentage": 65,
-    "reason": "AI/Data development, dar salariu indică nivel mid"
+    "matchPercentage": 85,
+    "reason": "Rol AI/Data development, salariu bun, în Cluj. Se potrivește excelent."
+  },
+  {
+    "url": "https://www.ejobs.ro/user/locuri-de-munca/odoo-builder-ai-specialist/1959089",
+    "title": "ODOO BUILDER & AI SPECIALIST",
+    "company": "ECOVENT EXPERT S.R.L.",
+    "location": [
+      "Bucuresti"
+    ],
+    "salary": [
+      "4500-5500 RON"
+    ],
+    "date": "2026-05-23T00:00:00Z",
+    "status": "published",
+    "f_tag": [
+      "UBVFMIIA"
+    ],
+    "matchPercentage": 55,
+    "reason": "AI + Odoo development, salariu bun. Odoo e specific dar AI componenta e relevantă."
   },
   {
     "url": "https://www.bestjobs.eu/loc-de-munca/data-analyst-522",
@@ -375,168 +537,6 @@
       "UBVFMIIA"
     ],
     "matchPercentage": 70,
-    "reason": "Data analysis, remote, entry-level, potrivit"
-  },
-  {
-    "url": "https://www.bestjobs.eu/loc-de-munca/bi-data-analyst-7",
-    "title": "BI/ Data analyst",
-    "company": "DATEIO",
-    "location": [
-      "Bucuresti,Bucuresti"
-    ],
-    "salary": [
-      "1500-1750 RON"
-    ],
-    "date": "2026-05-14T00:00:00Z",
-    "status": "published",
-    "f_tag": [
-      "UBVFMIIA"
-    ],
-    "matchPercentage": 70,
-    "reason": "BI/Data analysis, salariu bun pentru junior"
-  },
-  {
-    "url": "https://www.bestjobs.eu/loc-de-munca/back-end-developer-108",
-    "title": "Back End Developer",
-    "company": "CLEAR DATA",
-    "location": [
-      "Bucuresti"
-    ],
-    "salary": [
-      "1600-2000 RON"
-    ],
-    "date": "2026-05-14T00:00:00Z",
-    "status": "published",
-    "f_tag": [
-      "UBVFMIIA"
-    ],
-    "matchPercentage": 60,
-    "reason": "Backend development, tech stack neprecizat dar relevant"
-  },
-  {
-    "url": "https://www.bestjobs.eu/loc-de-munca/programator-python-14",
-    "title": "Programator Python",
-    "company": "CELLTECH MOBILE SERVICES",
-    "location": [
-      "Buftea, Romania"
-    ],
-    "salary": [
-      "1250-1385 RON"
-    ],
-    "date": "2026-05-14T00:00:00Z",
-    "status": "published",
-    "f_tag": [
-      "UBVFMIIA"
-    ],
-    "matchPercentage": 75,
-    "reason": "Python, potrivit pentru nivel junior"
-  },
-  {
-    "url": "https://www.bestjobs.eu/loc-de-munca/junior-python-developer-fonduri-de-investitii",
-    "title": "Junior Python Developer - Fonduri de Investitii",
-    "company": "ATLANTIC HOUSE GROUP",
-    "location": [
-      "Remote"
-    ],
-    "salary": [
-      "970-1070 RON"
-    ],
-    "date": "2026-05-14T00:00:00Z",
-    "status": "published",
-    "f_tag": [
-      "UBVFMIIA"
-    ],
-    "matchPercentage": 85,
-    "reason": "Junior Python, remote, exact ce caut"
-  },
-  {
-    "url": "https://www.bestjobs.eu/loc-de-munca/qa-engineer-manual-and-automation-with-python",
-    "title": "QA engineer - manual and automation with Python",
-    "company": "ARTSOFT CONSULT",
-    "location": [
-      "Cluj-Napoca, Romania"
-    ],
-    "salary": [
-      "1495-1655 RON"
-    ],
-    "date": "2026-05-14T00:00:00Z",
-    "status": "published",
-    "f_tag": [
-      "UBVFMIIA"
-    ],
-    "matchPercentage": 70,
-    "reason": "Testare automata cu Python, relevant"
-  },
-  {
-    "url": "https://www.bestjobs.eu/loc-de-munca/java-developer-1152",
-    "title": "Java developer",
-    "company": "NLIGHT MEDIA CREATIVE",
-    "location": [
-      "Remote"
-    ],
-    "salary": [
-      "925-1025 RON"
-    ],
-    "date": "2026-05-14T00:00:00Z",
-    "status": "published",
-    "f_tag": [
-      "UBVFMIIA"
-    ],
-    "matchPercentage": 70,
-    "reason": "Java, remote, salariu junior"
-  },
-  {
-    "url": "https://www.bestjobs.eu/loc-de-munca/java-developer-integration-consultant-2",
-    "title": "Java Developer / Integration Consultant",
-    "company": "MOSCU",
-    "location": [
-      "Remote"
-    ],
-    "salary": [
-      "2800-3400 RON"
-    ],
-    "date": "2026-05-14T00:00:00Z",
-    "status": "published",
-    "f_tag": [
-      "UBVFMIIA"
-    ],
-    "matchPercentage": 55,
-    "reason": "Java, remote, mid-level"
-  },
-  {
-    "url": "https://www.bestjobs.eu/loc-de-munca/software-developer-react-java-node-js",
-    "title": "Software Developer (React, Java, Node.js)",
-    "company": "STONIKBYTE",
-    "location": [
-      "Remote"
-    ],
-    "salary": [
-      "945-1045 RON"
-    ],
-    "date": "2026-05-14T00:00:00Z",
-    "status": "published",
-    "f_tag": [
-      "UBVFMIIA"
-    ],
-    "matchPercentage": 75,
-    "reason": "Tech stack variat (Java, React, Node.js), remote, junior"
-  },
-  {
-    "url": "https://www.bestjobs.eu/loc-de-munca/junior-java-developer-101",
-    "title": "Junior Java Developer",
-    "company": "VEST INTEGRATED SOLUTIONS",
-    "location": [
-      "Remote"
-    ],
-    "salary": [
-      "960-1060 RON"
-    ],
-    "date": "2026-05-19T00:00:00Z",
-    "status": "published",
-    "f_tag": [
-      "UBVFMIIA"
-    ],
-    "matchPercentage": 90,
-    "reason": "Junior Java, remote, perfect"
+    "reason": "Data analysis remote, salariu decent. Se potrivește cu skill-urile de date."
   }
 ]
