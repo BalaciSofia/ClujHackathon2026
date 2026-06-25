@@ -67,7 +67,7 @@ async function getDesc(job) {
     const text = html.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
     const idx = text.search(/about.?the.?job|descrierea.?postului|descriere/i);
     return idx > 0 ? text.slice(idx, idx + 2000) : text.slice(0, 1500);
-  } catch { return ''; }
+  } catch (e) { process.stderr.write(`    getDesc error for ${job.title}: ${e}\n`); return ''; }
 }
 
 const tag = readTag();
@@ -91,7 +91,7 @@ for (const q of keywords) {
     for (const doc of d.response?.docs || []) {
       if (!seen.has(doc.id)) { seen.add(doc.id); allJobs.push(doc); }
     }
-  } catch (e) {}
+    } catch (e) { process.stderr.write(`  API error for keyword "${q}": ${e}\n`); }
 }
 
 if (allJobs.length < 50) {
@@ -104,7 +104,7 @@ if (allJobs.length < 50) {
       for (const doc of d.response?.docs || []) {
         if (!seen.has(doc.id)) { seen.add(doc.id); allJobs.push(doc); }
       }
-    } catch (e) {}
+    } catch (e) { process.stderr.write(`  API error for fallback "${q}": ${e}\n`); }
   }
 }
 process.stdout.write(`Found ${allJobs.length} unique jobs total\n`);
@@ -124,21 +124,18 @@ for (let start = 0; start < allJobs.length && matchedJobs.length < TARGET_MATCHE
 
   const evalPrompt = `${agentPrompt}
 
-Esti un student care cauta orice job entry-level la care te-ai putea angaja, chiar daca nu ai toate skillurile inca.
-Pentru fiecare job de mai jos, estimeaza cat de potrivit e pentru un student ca tine (proaspat absolvent / internship / junior).
-Fii GENEROS: orice job pe care l-ai putea invata la fata locului conteaza (match >= 20).
+Pentru fiecare job de mai jos, decide dacă e potrivit pentru un student ca tine (internship/junior/mid).
 Raspunde DOAR cu JSON array:
-[{"title":"...", "matchPercentage":0-100, "reason":"..."}]
+[{"title":"...", "match":bool, "matchPercentage":0-100, "reason":"..."}]
 
 ---
 ${jobList}`;
 
   process.stdout.write(`  Evaluating ${batch.length} jobs...\n`);
-  const results = extractJsonArray(runOpencode(evalPrompt, 300000));
+  const results = extractJsonArray(runOpencode(evalPrompt));
 
   for (let i = 0; i < Math.min(results.length, batch.length); i++) {
-    const pct = results[i]?.matchPercentage ?? 0;
-    if (pct >= 20 && matchedJobs.length < TARGET_MATCHED) {
+    if (results[i]?.match && matchedJobs.length < TARGET_MATCHED) {
       matchedJobs.push({
         url: batch[i].url,
         title: batch[i].title,
@@ -150,36 +147,12 @@ ${jobList}`;
         _version_: batch[i]._version_,
         _root_: batch[i]._root_,
         f_tag: [tag],
-        matchPercentage: pct,
-        reason: results[i].reason || '',
+        matchPercentage: results[i].matchPercentage,
+        reason: results[i].reason,
       });
     }
   }
   process.stdout.write(`  Matched so far: ${matchedJobs.length}/${TARGET_MATCHED}\n`);
-}
-
-// Daca tot n-am gasit destule, includem orice job cu matchPercentage > 0
-if (matchedJobs.length < 5 && allJobs.length > 0) {
-  const topJobs = allJobs.slice(0, TARGET_MATCHED);
-  for (const j of topJobs) {
-    if (!matchedJobs.find(m => m.url === (j.url || j.job_link))) {
-      matchedJobs.push({
-        url: j.url || j.job_link || '',
-        title: j.title,
-        company: j.company,
-        location: j.location || [],
-        salary: j.salary || [],
-        date: j.date || '',
-        status: j.status || '',
-        _version_: j._version_ || '',
-        _root_: j._root_ || '',
-        f_tag: [tag],
-        matchPercentage: 30,
-        reason: 'Loc de munca entry-level disponibil pentru studenti',
-      });
-    }
-  }
-  process.stdout.write(`  (fallback) Adaug ${Math.min(TARGET_MATCHED, matchedJobs.length)} jobs din API\n`);
 }
 
 writeFileSync(OUTPUT_PATH, JSON.stringify(matchedJobs, null, 2));
