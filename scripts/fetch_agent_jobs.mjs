@@ -1,5 +1,5 @@
 import { readFileSync, writeFileSync } from 'fs';
-import { execFileSync } from 'child_process';
+import { execSync } from 'child_process';
 
 const TARGET_MATCHED = 30;
 const BATCH = 25;
@@ -18,10 +18,9 @@ function readAgentPrompt() {
 }
 
 function runOpencode(promptText, timeout = 180000) {
-  const stdout = execFileSync('opencode', [
-    'run', '--model', 'opencode/big-pickle', '--format', 'json',
-    '--dangerously-skip-permissions',
-  ], { input: promptText, timeout, encoding: 'utf-8', maxBuffer: 10 * 1024 * 1024 });
+  const stdout = execSync(
+    `opencode run --model opencode/big-pickle --format json --dangerously-skip-permissions`,
+    { input: promptText, timeout, encoding: 'utf-8', maxBuffer: 10 * 1024 * 1024, shell: true });
 
   let text = '';
   for (const line of stdout.split('\n').filter(l => l.trim())) {
@@ -31,8 +30,10 @@ function runOpencode(promptText, timeout = 180000) {
 }
 
 function extractJsonArray(text) {
-  const match = text.match(/\[[\s\S]*\]/);
-  return match ? JSON.parse(match[0]) : [];
+  const stripped = text.replace(/```json\s*|\s*```/g, '');
+  const match = stripped.match(/\[[\s\S]*?\]/);
+  if (!match) return [];
+  try { return JSON.parse(match[0]); } catch { return []; }
 }
 
 function generateKeywords(agentPrompt) {
@@ -70,7 +71,10 @@ async function getDesc(job) {
 }
 
 const tag = readTag();
-const agentPrompt = readAgentPrompt();
+let agentPrompt = readAgentPrompt();
+
+// Taie sectiunea ## Output Format ca sa nu contrazica instructiunile de evaluare
+agentPrompt = agentPrompt.replace(/\n## Output Format[\s\S]*$/, '');
 
 process.stdout.write(`Tag: ${tag}\n`);
 
