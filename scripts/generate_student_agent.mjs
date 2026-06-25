@@ -66,8 +66,8 @@ Genereaza ${AGENT_FILE}. Numele agentului: "Student". Extrage skillurile din mat
 
 console.error(`Generating student agent for ${tag}...`);
 const stdout = execSync(
-  `opencode run --model opencode/big-pickle --format json --dangerously-skip-permissions ${JSON.stringify(prompt)}`,
-  { timeout: 900000, encoding: 'utf-8', maxBuffer: 50 * 1024 * 1024, shell: true }
+  `opencode run --model opencode/big-pickle --format json --dangerously-skip-permissions`,
+  { input: prompt, timeout: 900000, encoding: 'utf-8', maxBuffer: 50 * 1024 * 1024, shell: true }
 );
 
 let content = '';

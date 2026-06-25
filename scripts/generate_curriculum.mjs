@@ -65,8 +65,8 @@ Exemplu de format:
 \`\`\``;
 
   console.error('Generating curriculum...');
-  execSync(`opencode run --model opencode/big-pickle --dangerously-skip-permissions ${JSON.stringify(prompt)}`,
-    { timeout: 600000, encoding: 'utf-8', maxBuffer: 50 * 1024 * 1024, shell: true, stdio: 'inherit' });
+  execSync(`opencode run --model opencode/big-pickle --dangerously-skip-permissions`,
+    { input: prompt, timeout: 600000, encoding: 'utf-8', maxBuffer: 50 * 1024 * 1024, shell: true, stdio: ['pipe', 'inherit', 'inherit'] });
 
   console.error(`Done — check ${outputPath}`);
 }
