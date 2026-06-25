@@ -1,4 +1,4 @@
-import { readFileSync, existsSync, mkdirSync } from 'fs';
+import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'fs';
 import { execSync } from 'child_process';
 
 const TAG_PATH = 'local_tag.md';
@@ -65,8 +65,23 @@ ${curriculum}
 Genereaza ${AGENT_FILE}. Numele agentului: "Student". Extrage skillurile din materii si grupeaza-le pe categorii logice. Engleza.`;
 
 console.error(`Generating student agent for ${tag}...`);
-execSync(
-  `opencode run --model opencode/big-pickle --dangerously-skip-permissions ${JSON.stringify(prompt)}`,
-  { timeout: 900000, encoding: 'utf-8', maxBuffer: 50 * 1024 * 1024, shell: true, stdio: 'inherit' }
+const stdout = execSync(
+  `opencode run --model opencode/big-pickle --format json --dangerously-skip-permissions ${JSON.stringify(prompt)}`,
+  { timeout: 900000, encoding: 'utf-8', maxBuffer: 50 * 1024 * 1024, shell: true }
 );
-console.error(`Done — check ${AGENT_FILE}`);
+
+let content = '';
+for (const line of stdout.split('\n').filter(l => l.trim())) {
+  try {
+    const ev = JSON.parse(line);
+    if (ev.type === 'text') content += ev.part?.text || '';
+  } catch {}
+}
+
+if (!content) {
+  console.error('No output generated from opencode');
+  process.exit(1);
+}
+
+writeFileSync(AGENT_FILE, content.trim(), 'utf-8');
+console.error(`Done — wrote ${AGENT_FILE} (${content.length} chars)`);
