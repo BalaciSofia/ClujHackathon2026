@@ -21,9 +21,29 @@ function readTagFile() {
 }
 
 function runOpencode(prompt, timeoutMs = 900000) {
-  const cmd = `opencode run --model opencode/big-pickle --dangerously-skip-permissions`;
-  return execSync(cmd,
+  const cmd = `opencode run --model opencode/big-pickle --format json --dangerously-skip-permissions`;
+  const stdout = execSync(cmd,
     { input: prompt, timeout: timeoutMs, encoding: 'utf-8', maxBuffer: 50 * 1024 * 1024, shell: true });
+
+  // Collect all text parts from NDJSON events
+  let text = '';
+  for (const line of stdout.split('\n').filter(l => l.trim())) {
+    try {
+      const ev = JSON.parse(line);
+      if (ev.type === 'text') text += ev.part?.text || '';
+    } catch {}
+  }
+
+  // If no text found, maybe opencode wrote it to a file instead
+  if (!text) {
+    const fileMatch = stdout.match(/← Write\s+(\/\S+)/);
+    if (fileMatch && existsSync(fileMatch[1])) {
+      text = readFileSync(fileMatch[1], 'utf-8');
+      console.error(`Read output from file: ${fileMatch[1]} (${text.length} chars)`);
+    }
+  }
+
+  return text;
 }
 
 function stripHtml(html) {
@@ -126,6 +146,8 @@ async function main() {
     // Phase 1: extract structure as JSON via opencode
     const extractPrompt = `Extract the curriculum data from the text below as a JSON object.
 
+IMPORTANT: Do NOT use any tools or write files. Just output the JSON directly in your response.
+
 Return ONLY valid JSON with this structure:
 {
   "university": "University Name",
@@ -155,7 +177,7 @@ Rules:
 - Use exact subject/specialization names from the text
 - Do NOT invent anything
 - Group subjects by year and semester
-- Output ONLY the JSON, no other text
+- Output ONLY the JSON, no other text, no file operations
 
 Text:
 ${curriculumText.substring(0, 40000)}`;
@@ -163,10 +185,11 @@ ${curriculumText.substring(0, 40000)}`;
     console.error('Phase 1: extracting curriculum structure via opencode...');
     const jsonOut = runOpencode(extractPrompt, 900000);
 
-    const jsonMatch = jsonOut.match(/\{[\s\S]*\}/);
+    let cleaned = jsonOut.trim().replace(/^```json\s*\n?/i, '').replace(/\n?```\s*$/i, '').trim();
+    const jsonMatch = cleaned.match(/\{[\s\S]*\}/);
     if (!jsonMatch) {
       console.error('Could not extract JSON from opencode output');
-      console.error(`Output preview: ${jsonOut.substring(0, 500)}`);
+      console.error(`Output preview: ${cleaned.substring(0, 500)}`);
       process.exit(1);
     }
     const curriculum = JSON.parse(jsonMatch[0]);
