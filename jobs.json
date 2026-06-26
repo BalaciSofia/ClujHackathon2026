@@ -1,59 +1,5 @@
 [
   {
-    "url": "https://multijobs.ro/job/internship-spain-implementation-consultant/5769",
-    "title": "Internship - Spain Implementation Consultant",
-    "company": "Multidata Management S.R.L.",
-    "location": [
-      "Bucuresti, Bucuresti, Romania"
-    ],
-    "salary": [
-      ""
-    ],
-    "date": "2026-06-11T00:00:00Z",
-    "status": "published",
-    "f_tag": [
-      "UBBFL"
-    ],
-    "matchPercentage": 50,
-    "reason": "Implementation consulting for Spain could leverage Spanish language skills from the curriculum. However, consulting/implementation may require business/technical knowledge not covered in Letters."
-  },
-  {
-    "url": "https://www.bestjobs.eu/loc-de-munca/internship-departament-freight-forwarding-1",
-    "title": "Internship Departament Freight Forwarding",
-    "company": "Dp World Logistics",
-    "location": [
-      "Bucuresti, Bucuresti, Romania"
-    ],
-    "salary": [
-      "min: 1060, max: 1175 EUR"
-    ],
-    "date": "2026-05-14T00:00:00Z",
-    "status": "published",
-    "f_tag": [
-      "UBBFL"
-    ],
-    "matchPercentage": 40,
-    "reason": "Freight forwarding involves communication, documentation, and foreign language skills — partial alignment with Letters studies. However, logistics domain knowledge is not part of the curriculum."
-  },
-  {
-    "url": "https://www.hipo.ro/locuri-de-munca/locuri_de_munca/268433/AUMOVIO-Romania/Internship---Project-Management-Officer-for-HR-(Iasi)",
-    "title": "Internship - Project Management Officer for HR (Iasi)",
-    "company": "Aumovio Romania",
-    "location": [
-      "Iasi, Brasov,Iasi, Romania"
-    ],
-    "salary": [
-      ""
-    ],
-    "date": "2026-05-30T00:00:00Z",
-    "status": "published",
-    "f_tag": [
-      "UBBFL"
-    ],
-    "matchPercentage": 45,
-    "reason": "PMO/HR role leverages communication, writing, and organizational skills from Letters. However, the automotive engineering context and specific HR/PM tools may require additional training."
-  },
-  {
     "url": "https://multijobs.ro/job/junior-content-creator/2266",
     "title": "Junior Content Creator",
     "company": "Advice Digital S.R.L.",
@@ -68,8 +14,8 @@
     "f_tag": [
       "UBBFL"
     ],
-    "matchPercentage": 75,
-    "reason": "Strong match: content creation directly uses writing, text analysis, creativity, communication, and stylistic skills from the Romanian language and literature curriculum. Academic writing and research methodology are also relevant."
+    "matchPercentage": 65,
+    "reason": "Content creation – scriere creativă, comunicare, abilități lingvistice; se aliniază bine cu competențele de literatură și limbi străine."
   },
   {
     "url": "https://usamvjobs.ro/job/bucuresti-2-junior-recruitment-assistant/",
@@ -86,62 +32,8 @@
     "f_tag": [
       "UBBFL"
     ],
-    "matchPercentage": 70,
-    "reason": "Strong match: recruitment leverages communication, interpersonal skills, language proficiency, and text analysis from Letters. Academic writing and research methodology also support the role."
-  },
-  {
-    "url": "https://www.hipo.ro/locuri-de-munca/locuri_de_munca/222112/JumpStart---A-GenZ-Career-Hub/Programe-de-internship,-trainee-sau-joburi-entry-level-in-Marketing",
-    "title": "Programe de internship, trainee sau joburi entry-level in Marketing",
-    "company": "Jumpstart - A Genz Career Hub",
-    "location": [
-      "Bucuresti,Iasi,Timisoara, Bucuresti,Brasov,Iasi,Timis, Romania"
-    ],
-    "salary": [
-      ""
-    ],
-    "date": "2026-05-08T00:00:00Z",
-    "status": "published",
-    "f_tag": [
-      "UBBFL"
-    ],
-    "matchPercentage": 45,
-    "reason": "Marketing implică comunicare, scriere, analiză — abilități din curriculum"
-  },
-  {
-    "url": "https://www.hipo.ro/locuri-de-munca/locuri_de_munca/222108/JumpStart---A-GenZ-Career-Hub/Programe-de-internship,-trainee-sau-joburi-entry-level-in-Resurse-Umane",
-    "title": "Programe de internship, trainee sau joburi entry-level in Resurse Umane",
-    "company": "Jumpstart - A Genz Career Hub",
-    "location": [
-      "Bucuresti,Oradea,Timisoara, Bucuresti,Bihor,Timis, Romania"
-    ],
-    "salary": [
-      ""
-    ],
-    "date": "2026-05-08T00:00:00Z",
-    "status": "published",
-    "f_tag": [
-      "UBBFL"
-    ],
-    "matchPercentage": 40,
-    "reason": "HR implică comunicare, redactare, analiză — relevante pentru litere"
-  },
-  {
-    "url": "https://www.bestjobs.eu/loc-de-munca/data-entry-operator-66",
-    "title": "Data entry operator",
-    "company": "Gsh Online Media",
-    "location": [
-      "Bucuresti, Romania, Romania"
-    ],
-    "salary": [
-      "min: 900, max: 990 EUR"
-    ],
-    "date": "2026-06-03T00:00:00Z",
-    "status": "published",
-    "f_tag": [
-      "UBBFL"
-    ],
-    "matchPercentage": 45,
-    "reason": "Atenție la detalii, competențe lingvistice — relevante pentru litere"
+    "matchPercentage": 35,
+    "reason": "Recruitment – implică comunicare, evaluare interpersonală, limbi străine utile; potrivire parțială."
   },
   {
     "url": "https://www.bestjobs.eu/loc-de-munca/dictionary-clasifier-data-entry-operator-7",
@@ -158,8 +50,8 @@
     "f_tag": [
       "UBBFL"
     ],
-    "matchPercentage": 85,
-    "reason": "Clasificare dicționare — se potrivește direct cu lingvistică, filologie, lexicologie"
+    "matchPercentage": 75,
+    "reason": "Clasificare dicționar — folosește direct cunoștințele de lexicologie, semantică, limbă română contemporană; salariu mic dar relevanță mare"
   },
   {
     "url": "https://www.hipo.ro/locuri-de-munca/locuri_de_munca/245227/LXT-/Romanian--English---Data-Entry-Clerk-(Transcriber)-(Full-time)",
@@ -177,7 +69,7 @@
       "UBBFL"
     ],
     "matchPercentage": 80,
-    "reason": "Transcriere RO-EN — competențe lingvistice direct aplicabile"
+    "reason": "Transcriere RO-EN — valorifică cunoștințele de limba română și engleză, fonetică, ortografie; direct pe domeniul de studiu"
   },
   {
     "url": "https://www.bestjobs.eu/loc-de-munca/redactor-78",
@@ -194,141 +86,231 @@
     "f_tag": [
       "UBBFL"
     ],
+    "matchPercentage": 90,
+    "reason": "Redactor — perfect pentru litere: scriere academică, corectură, analiză text, comunicare; remote, entry-level, salariu bun"
+  },
+  {
+    "url": "https://www.bestjobs.eu/loc-de-munca/agent-call-center-limba-spaniola-2",
+    "title": "Agent Call Center - limba spaniola",
+    "company": "Cosmos Call Center",
+    "location": [
+      "Bucuresti,Bucuresti, Bucuresti, Romania"
+    ],
+    "salary": [
+      "min: 650, max: 850 EUR"
+    ],
+    "date": "2026-05-14T00:00:00Z",
+    "status": "published",
+    "f_tag": [
+      "UBBFL"
+    ],
+    "matchPercentage": 88,
+    "reason": "Spaniola este în setul tău de limbi străine; call center-ul valorifică competențele lingvistice."
+  },
+  {
+    "url": "https://www.bestjobs.eu/loc-de-munca/operator-call-center-1037",
+    "title": "Operator call center",
+    "company": "Delphiss Engineering",
+    "location": [
+      "Bucharest, Romania, Romania"
+    ],
+    "salary": [
+      "min: 960, max: 1060 EUR"
+    ],
+    "date": "2026-06-18T00:00:00Z",
+    "status": "published",
+    "f_tag": [
+      "UBBFL"
+    ],
+    "matchPercentage": 45,
+    "reason": "Rol de comunicare, dar fără o limbă străină specificată; potrivește doar parțial abilitățile tale."
+  },
+  {
+    "url": "https://www.bestjobs.eu/loc-de-munca/operator-call-center-1008",
+    "title": "Operator Call Center",
+    "company": "Mai Mai Credit",
+    "location": [
+      "Bucharest Romania, Romania"
+    ],
+    "salary": [
+      "min: 600, max: 700 EUR"
+    ],
+    "date": "2026-05-14T00:00:00Z",
+    "status": "published",
+    "f_tag": [
+      "UBBFL"
+    ],
+    "matchPercentage": 40,
+    "reason": "Comunicare telefonică, dar fără cerințe lingvistice avansate – nu valorifică pregătirea ta filologică."
+  },
+  {
+    "url": "https://www.bestjobs.eu/loc-de-munca/operator-call-center-vanzari-30",
+    "title": "Operator call center vanzari",
+    "company": "Grand Gaz",
+    "location": [
+      "Bucuresti, Bucuresti, Romania"
+    ],
+    "salary": [
+      "min: 1050, max: 1200 EUR"
+    ],
+    "date": "2026-05-14T00:00:00Z",
+    "status": "published",
+    "f_tag": [
+      "UBBFL"
+    ],
+    "matchPercentage": 40,
+    "reason": "Vânzări telefonice în română – folosești competențe de comunicare, dar nu cele lingvistice diferențiatoare."
+  },
+  {
+    "url": "https://www.bestjobs.eu/loc-de-munca/operator-call-center-1019",
+    "title": "Operator call center",
+    "company": "Smile Credit Ifn",
+    "location": [
+      "Sibiu,Sibiu, Sibiu, Romania"
+    ],
+    "salary": [
+      "min: 785, max: 870 EUR"
+    ],
+    "date": "2026-05-14T00:00:00Z",
+    "status": "published",
+    "f_tag": [
+      "UBBFL"
+    ],
+    "matchPercentage": 40,
+    "reason": "Call center în Sibiu, fără limbă străină obligatorie – potrivire parțială."
+  },
+  {
+    "url": "https://www.bestjobs.eu/loc-de-munca/operator-call-center-1025",
+    "title": "Operator call center",
+    "company": "Romdaf",
+    "location": [
+      "Strada Donath 180a, Cluj-Napoca, Romania, Romania"
+    ],
+    "salary": [
+      "min: 1050, max: 1160 EUR"
+    ],
+    "date": "2026-05-14T00:00:00Z",
+    "status": "published",
+    "f_tag": [
+      "UBBFL"
+    ],
+    "matchPercentage": 45,
+    "reason": "Cluj-Napoca (locație bună), dar nu solicită limbi străine – potrivire medie."
+  },
+  {
+    "url": "https://www.bestjobs.eu/loc-de-munca/call-center-officer-23",
+    "title": "Call Center Officer",
+    "company": "Axi Finance Ifn",
+    "location": [
+      "Bulevardul Dimitrie Pompeiu 5-7, Bucuresti, Romania, Romania"
+    ],
+    "salary": [
+      "min: 1030, max: 1140 EUR"
+    ],
+    "date": "2026-06-04T00:00:00Z",
+    "status": "published",
+    "f_tag": [
+      "UBBFL"
+    ],
+    "matchPercentage": 40,
+    "reason": "Rol de comunicare fără specificații lingvistice – nu exploatează competențele tale de bază."
+  },
+  {
+    "url": "https://www.bestjobs.eu/loc-de-munca/mitarbeiter-im-contact-center-vertriebsprofi-1",
+    "title": "Mitarbeiter im Contact Center & Vertriebsprofi",
+    "company": "P-Call",
+    "location": [
+      "Strada Revolutiei, Sibiu, Romania, Romania"
+    ],
+    "salary": [
+      "min: 850, max: 940 EUR"
+    ],
+    "date": "2026-05-09T00:00:00Z",
+    "status": "published",
+    "f_tag": [
+      "UBBFL"
+    ],
     "matchPercentage": 85,
-    "reason": "Redactare — se potrivește direct cu limba română, literatură, analiză text, scriere academică"
+    "reason": "Titlu în germană, Sibiu – cunoști germana, iar contact center-ul valorifică limba străină."
   },
   {
-    "url": "https://careers.n-ix.com/jobs/4473020101-technical-writing-senior/",
-    "title": "Senior Technical Writer (#5270)",
-    "company": "N-Ix",
-    "location": [
-      "Bucuresti, Bucuresti, Romania"
-    ],
-    "salary": [
-      ""
-    ],
-    "date": "2026-06-07T00:00:00Z",
-    "status": "published",
-    "f_tag": [
-      "UBBFL"
-    ],
-    "matchPercentage": 70,
-    "reason": "Technical writing leverages strong writing, language, and communication skills from the Letters curriculum. 'Senior' level may require experience, but core competencies align well."
-  },
-  {
-    "url": "https://wd5.myworkdaysite.com/en-US/recruiting/microchiphr/External/job/Romania---Bucharest/Technical-Writer_R2488-26",
-    "title": "Technical Writer",
-    "company": "Microchip",
-    "location": [
-      "Bucuresti, Bucuresti, Romania"
-    ],
-    "salary": [
-      ""
-    ],
-    "date": "2026-06-16T00:00:00Z",
-    "status": "published",
-    "f_tag": [
-      "UBBFL"
-    ],
-    "matchPercentage": 75,
-    "reason": "Excellent fit for Diana's language, writing, and text analysis skills. Entry-level technical writing is a natural path for a Letters graduate."
-  },
-  {
-    "url": "https://www.mynextjob.ro/loc-de-munca/workplace-specialist-content-designer-1782222",
-    "title": "Workplace Specialist - Content Designer",
-    "company": "Inetum",
-    "location": [
-      "Bucuresti, Bucuresti, Romania"
-    ],
-    "salary": [
-      ""
-    ],
-    "date": "2026-05-13T00:00:00Z",
-    "status": "published",
-    "f_tag": [
-      "UBBFL"
-    ],
-    "matchPercentage": 65,
-    "reason": "Content design requires writing and communication skills from the curriculum. Some UX/tech knowledge may be needed but junior level is accessible."
-  },
-  {
-    "url": "https://updivision.com/careers/content-creator-with-an-eye-for-ux-design",
-    "title": "Content Creator with an eye for UX design",
-    "company": "Updivision",
+    "url": "https://www.hipo.ro/locuri-de-munca/locuri_de_munca/171877/Cegedim-Service-Center/Payroll-Specialist",
+    "title": "Payroll Specialist",
+    "company": "Cegedim Service Center",
     "location": [
       "Romania"
     ],
     "salary": [
       ""
     ],
-    "date": "2026-06-07T00:00:00Z",
+    "date": "2026-05-23T00:00:00Z",
     "status": "published",
     "f_tag": [
       "UBBFL"
     ],
     "matchPercentage": 60,
-    "reason": "Content creation uses writing and communication strengths. UX design is outside the curriculum but junior level offers learning opportunity."
+    "reason": "Companie franceză ce menționează 'competențe lingvistice'; cunoști franceza, dar rolul e financiar-contabil, nu filologic."
   },
   {
-    "url": "https://www.bestjobs.eu/loc-de-munca/asistent-personal-content-umbra-mea",
-    "title": "Asistent content social media",
-    "company": "Xtra Shop",
+    "url": "https://multijobs.ro/job/customer-support-with-spanish/6674",
+    "title": "Customer Support with Spanish",
+    "company": "Multidata Management S.R.L.",
     "location": [
-      "Suceava, Romania, Romania"
+      "Bucuresti, Bucuresti, Romania"
     ],
     "salary": [
-      "min: 700, max: 800 EUR"
+      ""
     ],
-    "date": "2026-05-14T00:00:00Z",
+    "date": "2026-06-11T00:00:00Z",
     "status": "published",
     "f_tag": [
       "UBBFL"
     ],
-    "matchPercentage": 70,
-    "reason": "Social media content assistant is a good junior match for writing skills, text analysis, and foreign language abilities."
+    "matchPercentage": 90,
+    "reason": "Spaniola este în setul tău de limbi; suport clienți valorifică abilitățile lingvistice."
   },
   {
-    "url": "https://www.bestjobs.eu/loc-de-munca/junior-digital-content-marketing-specialist",
-    "title": "Junior Digital Content Marketing Specialist",
-    "company": "Allis Electronics Impex 99",
+    "url": "https://www.mynextjob.ro/loc-de-munca/customer-support-coordinator-romania-1787447",
+    "title": "Customer Support Coordinator Romania",
+    "company": "Geneplanet",
     "location": [
-      "Papazoglu Dumitru 74-76, Bucuresti, Municipiul Bucuresti, Romania, Romania"
+      "Bucuresti, Bucuresti, Romania"
     ],
     "salary": [
-      "min: 900, max: 1000 EUR"
+      ""
     ],
-    "date": "2026-05-14T00:00:00Z",
+    "date": "2026-06-12T00:00:00Z",
     "status": "published",
     "f_tag": [
       "UBBFL"
     ],
-    "matchPercentage": 65,
-    "reason": "Junior content marketing role uses writing, communication, and text analysis skills. Digital aspect may need learning, but level is appropriate."
+    "matchPercentage": 55,
+    "reason": "Suport clienți în România; folosești româna și abilitățile de comunicare, dar nu o limbă străină avansată."
   },
   {
-    "url": "https://www.bestjobs.eu/loc-de-munca/councillor-for-international-cooperation-and-pr",
-    "title": "COUNCILLOR FOR INTERNATIONAL COOPERATION AND PR",
-    "company": "Danube Commission",
+    "url": "https://everymatrix.teamtailor.com/jobs/7871773-customer-support-representative-danish-speaker",
+    "title": "Customer Support Representative (Danish Speaker)",
+    "company": "Everymatrix",
     "location": [
-      "Budapesta, Romania"
+      "Bucuresti, Bucuresti, Romania"
     ],
     "salary": [
-      "min: 4318 EUR"
+      ""
     ],
-    "date": "2026-05-14T00:00:00Z",
+    "date": "2026-06-11T00:00:00Z",
     "status": "published",
     "f_tag": [
       "UBBFL"
     ],
-    "matchPercentage": 80,
-    "reason": "Strong match! Uses foreign languages (English, French, German, Italian, Spanish, Russian), communication, argumentation, and research skills — core Letters competencies. International PR aligns well."
+    "matchPercentage": 50,
+    "reason": "Daneza nu e în lista ta, dar norvegiana (similară) da – combinat cu competențe generale de comunicare, e o potrivire parțială."
   },
   {
-    "url": "https://jobs.hungrybytes.co/careers/marketing-specialist-romania/",
-    "title": "Marketing Specialist",
-    "company": "Hungrybytes",
+    "url": "https://jobs.foundever.com/job/Bucuresti-Customer-Support-Representative-with-German-Digital-Channels/1379016000/",
+    "title": "Customer Support Representative with German: Digital Channels",
+    "company": "Foundever",
     "location": [
-      "Iasi, Iasi, România"
+      "Bucuresti, Bucuresti, Romania"
     ],
     "salary": [
       ""
@@ -338,108 +320,126 @@
     "f_tag": [
       "UBBFL"
     ],
-    "matchPercentage": 55,
-    "reason": "Marketing uses communication and writing skills, but may require specific marketing knowledge not in the curriculum. Junior/mid level makes it feasible."
+    "matchPercentage": 90,
+    "reason": "Germana e în setul tău de limbi; suport clienți pe canale digitale – potrivire excelentă."
   },
   {
-    "url": "https://www.mynextjob.ro/loc-de-munca/marketing-manager-ro-1788592",
-    "title": "Marketing Manager - RO",
-    "company": "Knuspr",
+    "url": "https://www.bestjobs.eu/loc-de-munca/customer-support-with-german-55",
+    "title": "Customer Support with German",
+    "company": "Cognizant",
     "location": [
-      "Bucuresti, Bucuresti, Romania"
+      "Bucuresti, Romania, Romania"
     ],
     "salary": [
-      ""
-    ],
-    "date": "2026-06-21T00:00:00Z",
-    "status": "published",
-    "f_tag": [
-      "UBBFL"
-    ],
-    "matchPercentage": 55,
-    "reason": "Marketing role uses communication and writing skills. 1 year experience minimum is reasonable for a Letters graduate transitioning into marketing."
-  },
-  {
-    "url": "https://dreamjobs.ro/ro/job/bgs-grup/performance-marketing-specialist-1",
-    "title": "Performance Marketing Specialist",
-    "company": "Bgs Grup",
-    "location": [
-      "Bucuresti, Bucuresti, Romania"
-    ],
-    "salary": [
-      ""
+      "min: 985, max: 1090 EUR"
     ],
     "date": "2026-05-20T00:00:00Z",
     "status": "published",
     "f_tag": [
       "UBBFL"
     ],
+    "matchPercentage": 90,
+    "reason": "Germana – potrivire directă; customer support valorifică formarea ta lingvistică."
+  },
+  {
+    "url": "https://www.bestjobs.eu/loc-de-munca/agent-customer-support-limba-italiana",
+    "title": "Agent Customer Support limba ITALIANA",
+    "company": "Covisian",
+    "location": [
+      "Remote, Romania"
+    ],
+    "salary": [
+      "min: 700, max: 750 EUR"
+    ],
+    "date": "2026-05-14T00:00:00Z",
+    "status": "published",
+    "f_tag": [
+      "UBBFL"
+    ],
+    "matchPercentage": 92,
+    "reason": "Italiana – una dintre limbile tale străine; remote, suport clienți – foarte potrivit."
+  },
+  {
+    "url": "https://8ore.ro/locuri-de-munca/angajam-customer-support-limba-italiana",
+    "title": "Angajam Customer Support limba Italiana",
+    "company": "Easyhr",
+    "location": [
+      "Iasi, Iasi, Romania"
+    ],
+    "salary": [
+      "min: 3200 RON"
+    ],
+    "date": "2026-05-10T00:00:00Z",
+    "status": "published",
+    "f_tag": [
+      "UBBFL"
+    ],
+    "matchPercentage": 92,
+    "reason": "Italiana, suport clienți financiar-bancar – combinație bună cu competențele lingvistice."
+  },
+  {
+    "url": "https://multijobs.ro/job/customer-support-representative-cluj-napoca-hybrid/7087",
+    "title": "Customer Support Representative – Cluj-Napoca, Hybrid",
+    "company": "Multidata Management S.R.L.",
+    "location": [
+      "Cluj-Napoca, Cluj, Romania"
+    ],
+    "salary": [
+      ""
+    ],
+    "date": "2026-06-11T00:00:00Z",
+    "status": "published",
+    "f_tag": [
+      "UBBFL"
+    ],
+    "matchPercentage": 45,
+    "reason": "Cluj-Napoca (locație excelentă), dar fără descriere – nu știm dacă cere o limbă străină."
+  },
+  {
+    "url": "https://8ore.ro/locuri-de-munca/reprezentant-suport-clienti-customer-support-representative",
+    "title": "Reprezentant Suport Clienti/Customer Support Representative",
+    "company": "Animawings",
+    "location": [
+      "Bucuresti, Bucuresti, Romania"
+    ],
+    "salary": [
+      "min: 5000 RON"
+    ],
+    "date": "2026-05-10T00:00:00Z",
+    "status": "published",
+    "f_tag": [
+      "UBBFL"
+    ],
     "matchPercentage": 50,
-    "reason": "Marketing communication is relevant, but performance marketing requires analytical and technical skills not covered in the Letters curriculum."
+    "reason": "Suport clienți în română; folosești competențele de comunicare și limba română contemporană."
   },
   {
-    "url": "https://www.undelucram.ro/ro/locuri-de-munca/marketing-coordinator/96316",
-    "title": "Marketing Coordinator",
-    "company": "Adecco Romania",
+    "url": "https://www.bestjobs.eu/loc-de-munca/customer-support-agent-spanish-language-1",
+    "title": "Customer support agent spanish language",
+    "company": "Rosua Europe",
     "location": [
-      "Bucuresti, sector 1, Romania"
+      "Bucharest, Romania, Romania"
     ],
     "salary": [
-      ""
+      "min: 1000, max: 1180 EUR"
     ],
-    "date": "2026-05-19T00:00:00Z",
+    "date": "2026-06-24T00:00:00Z",
     "status": "published",
     "f_tag": [
       "UBBFL"
     ],
-    "matchPercentage": 55,
-    "reason": "Coordination and communication tasks align with Letters training in communication, research, and foreign languages."
+    "matchPercentage": 90,
+    "reason": "Spaniola – limbă pe care o studiezi; customer support – utilizare directă a competențelor tale."
   },
   {
-    "url": "https://www.hipo.ro/locuri-de-munca/locuri_de_munca/266795/AstraZeneca/Marketing-Intern-CVRM",
-    "title": "Marketing Intern CVRM",
-    "company": "Astrazeneca",
+    "url": "https://www.bestjobs.eu/loc-de-munca/agent-customer-support-limba-romana-14",
+    "title": "Agent Customer Support limba romana",
+    "company": "Winvia Entertainment",
     "location": [
-      "Bucuresti, Bucuresti, Romania"
+      "Bucuresti, Romania, Romania"
     ],
     "salary": [
-      ""
-    ],
-    "date": "2026-04-04T00:00:00Z",
-    "status": "published",
-    "f_tag": [
-      "UBBFL"
-    ],
-    "matchPercentage": 55,
-    "reason": "Marketing internship is suitable for a junior candidate with strong communication skills from Letters. No description limits assessment."
-  },
-  {
-    "url": "https://www.undelucram.ro/ro/locuri-de-munca/specialist-campanii-marketing/97261",
-    "title": "Specialist Campanii Marketing",
-    "company": "Auchan Romania",
-    "location": [
-      "bucuresti, Bucuresti, Romania"
-    ],
-    "salary": [
-      ""
-    ],
-    "date": "2026-05-19T00:00:00Z",
-    "status": "published",
-    "f_tag": [
-      "UBBFL"
-    ],
-    "matchPercentage": 55,
-    "reason": "Marketing campaigns role uses writing and communication skills. May require specific marketing tools knowledge not in curriculum."
-  },
-  {
-    "url": "https://www.bestjobs.eu/loc-de-munca/marketing-specialist-485",
-    "title": "Marketing Specialist",
-    "company": "Click2Leads.Com",
-    "location": [
-      "Bucuresti, Bucuresti, Romania"
-    ],
-    "salary": [
-      "min: 1315, max: 1455 EUR"
+      "min: 1195, max: 1325 EUR"
     ],
     "date": "2026-06-04T00:00:00Z",
     "status": "published",
@@ -447,61 +447,7 @@
       "UBBFL"
     ],
     "matchPercentage": 55,
-    "reason": "Marketing specialist role using communication, writing, and foreign language skills. Specific digital marketing tools may need learning."
-  },
-  {
-    "url": "https://www.bestjobs.eu/loc-de-munca/marketing-manager-reddit",
-    "title": "Marketing Manager – Reddit",
-    "company": "Click2Leads",
-    "location": [
-      "Bucuresti, Bucuresti, Romania"
-    ],
-    "salary": [
-      "min: 1540, max: 1705 EUR"
-    ],
-    "date": "2026-05-14T00:00:00Z",
-    "status": "published",
-    "f_tag": [
-      "UBBFL"
-    ],
-    "matchPercentage": 55,
-    "reason": "Social media marketing management uses writing and communication skills. Platform-specific knowledge can be acquired on the job."
-  },
-  {
-    "url": "https://www.bestjobs.eu/loc-de-munca/manager-marketing-124",
-    "title": "Manager marketing",
-    "company": "Smartkeep Solutions",
-    "location": [
-      "Arad, Arad, Romania"
-    ],
-    "salary": [
-      "min: 750, max: 1000 EUR"
-    ],
-    "date": "2026-05-14T00:00:00Z",
-    "status": "published",
-    "f_tag": [
-      "UBBFL"
-    ],
-    "matchPercentage": 50,
-    "reason": "Marketing management at lower salary range suggests junior level. Communication and writing skills are relevant, but marketing-specific training may be needed."
-  },
-  {
-    "url": "https://www.hipo.ro/locuri-de-munca/locuri_de_munca/268474/DentOP/Social-Media-Specialist",
-    "title": "Social Media Specialist",
-    "company": "Dentop",
-    "location": [
-      "Bucuresti, Bucuresti, Romania"
-    ],
-    "salary": [
-      ""
-    ],
-    "date": "2026-06-02T00:00:00Z",
-    "status": "published",
-    "f_tag": [
-      "UBBFL"
-    ],
-    "matchPercentage": 55,
-    "reason": "Social media content creation aligns with writing and communication skills from the Letters curriculum. No description limits assessment."
+    "reason": "Romanian language – domeniul tău de bază (Fonetică, Morfologie, Sintaxă etc.); suport clienți."
   },
   {
     "url": "https://www.bestjobs.eu/loc-de-munca/asistent-administrativ-289",
@@ -518,25 +464,79 @@
     "f_tag": [
       "UBBFL"
     ],
-    "matchPercentage": 55,
-    "reason": "Administrative assistant — leverages communication, writing, and organizational skills from Letters. Junior-level."
+    "matchPercentage": 50,
+    "reason": "Rol administrativ – valorifici organizarea, comunicarea scrisă și orală, dar fără o limbă străină obligatorie."
   },
   {
-    "url": "https://www.bestjobs.eu/loc-de-munca/jurist-junior-asistent-administrativ",
-    "title": "Jurist Junior / Asistent Administrativ",
-    "company": "More Business Consulting",
+    "url": "https://www.olx.ro/oferta/loc-de-munca/angajam-asistenta-administrativ-sectretariat-IDkH6np.html",
+    "title": "Angajăm asistentă administrativ - sectretariat",
+    "company": "Olx",
     "location": [
-      "Bucuresti, Romania, Romania"
+      "Bucuresti, Bucuresti, Romania"
     ],
     "salary": [
-      "min: 1175, max: 1300 EUR"
+      "min: 2500, max: 3500 RON"
     ],
-    "date": "2026-05-14T00:00:00Z",
+    "date": "2026-06-24T00:00:00Z",
+    "status": "published",
+    "f_tag": [
+      "UBBFL"
+    ],
+    "matchPercentage": 78,
+    "reason": "Abilități de comunicare, operare PC, limba română — competențe direct din curriculum (morfologie, sintaxă, lexicologie, operare calculator)."
+  },
+  {
+    "url": "https://www.bestjobs.eu/loc-de-munca/functionar-administrativ-suport-intern",
+    "title": "Functionar Administrativ - Suport Intern",
+    "company": "Bio-Technic",
+    "location": [
+      "Calea Plevnei 196, Bucuresti, Romania"
+    ],
+    "salary": [
+      "min: 800, max: 900 EUR"
+    ],
+    "date": "2026-05-29T00:00:00Z",
     "status": "published",
     "f_tag": [
       "UBBFL"
     ],
     "matchPercentage": 60,
-    "reason": "Junior administrative role. Writing, communication, and organizational skills from Letters are relevant."
+    "reason": "Sarcini administrative de bază — organizare documente, comunicare internă — compatibile parțial cu competențele unui student la Litere."
+  },
+  {
+    "url": "https://www.bestjobs.eu/loc-de-munca/asistent-administrativ-birou",
+    "title": "Asistent Administrativ Birou",
+    "company": "Econous",
+    "location": [
+      "MUNICIPIUL BUCURESTI, SECTOR 1, CALEA VICTORIEI, NR.155, TRONSON 7, BL.D1, ET.8, Romania"
+    ],
+    "salary": [
+      "min: 1080, max: 1190 EUR"
+    ],
+    "date": "2026-05-31T00:00:00Z",
+    "status": "published",
+    "f_tag": [
+      "UBBFL"
+    ],
+    "matchPercentage": 65,
+    "reason": "Activități de birou și relaționare — se potrivesc cu abilitățile de comunicare și operare PC dobândite în facultate."
+  },
+  {
+    "url": "https://www.bestjobs.eu/loc-de-munca/personal-administrativ-arhiva-2",
+    "title": "Personal administrativ/ arhiva",
+    "company": "Societatea Civila Profesionala De Executori Judecatoresti Mazilu Si As",
+    "location": [
+      "Splaiul Unirii nr. 45, bl. M15, sc. C, parter, ap. 68-69, sect. 3, BUCURESTI, Romania"
+    ],
+    "salary": [
+      "min: 800 EUR"
+    ],
+    "date": "2026-06-24T00:00:00Z",
+    "status": "published",
+    "f_tag": [
+      "UBBFL"
+    ],
+    "matchPercentage": 72,
+    "reason": "Arhivare și organizare documente — puncte forte ale unui student la Litere (atenție la detalii, metodologia cercetării științifice)."
   }
 ]
