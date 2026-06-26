@@ -19,11 +19,16 @@ if (!existsSync(AGENTS_DIR)) {
 
 const curriculum = readFileSync(filterPath, 'utf-8');
 
-const prompt = `Esti un generator de agenti studenti. Pe baza curriculumului unei facultati, generezi continutul unui fisier Markdown pentru un agent student care va analiza joburi.
+const prompt = `You are a generator of student agent markdown files.
 
-RASPUNDE DOAR CU CONTINUTUL FISIERULUI, fara alte explicatii sau cuvinte inainte/dupa.
+Your task: generate ONLY the markdown content for a student agent file, based on the curriculum below.
 
-URMATI EXACT aceasta structura:
+RULES - READ CAREFULLY:
+- Output ONLY the raw markdown content. NO greetings, NO explanations, NO "here is your file", NO "am generat", NO conversational text.
+- Do NOT say you wrote or generated anything. Just output the file content directly.
+- The output will be saved directly to a file. Any extra text will break the file.
+
+Follow this structure EXACTLY, replacing placeholders with real data from the curriculum:
 
 # Student Agent
 
@@ -58,11 +63,11 @@ When given a job description: analyze, match against your skills, score 0-100%, 
 }
 \`\`\`
 
-ACUM pe baza acestui curriculum:
+NOW, based on this curriculum:
 
 ${curriculum}
 
-Extrage skillurile din materiile de mai sus si grupeaza-le pe categorii logice. Foloseste limba engleza.`;
+Extract skills from the subjects above and group them into logical categories. Use English. Remember: output ONLY the markdown, nothing else.`;
 
 console.error(`Generating student agent for ${tag}...`);
 const stdout = execSync(
@@ -83,5 +88,14 @@ if (!content) {
   process.exit(1);
 }
 
-writeFileSync(AGENT_FILE, content.trim(), 'utf-8');
+content = content.trim();
+
+// Validate content — reject conversational responses that don't contain markdown agent structure
+const conversations = ['am generat', 'here is your', 'i have generated', 'i wrote', 'fisierul a fost generat', 'you can find'];
+if (!content.startsWith('#') || conversations.some(c => content.toLowerCase().includes(c))) {
+  console.error(`Output looks like a conversational response, not file content. First 200 chars:\n${content.slice(0, 200)}`);
+  process.exit(1);
+}
+
+writeFileSync(AGENT_FILE, content, 'utf-8');
 console.error(`Done — wrote ${AGENT_FILE} (${content.length} chars)`);
