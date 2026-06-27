@@ -44,6 +44,5 @@ jobs:
           else
             TAG="${{ steps.parse.outputs.tag }}"
             git commit -m "auto: actualizeaza curriculum $TAG"
-            git pull --rebase --autostash
             git push
           fi
