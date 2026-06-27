@@ -1,4 +1,4 @@
-# ClujHackathon2026
+# Job Widget — Filtrare inteligentă a locurilor de muncă
 
 **Filtrare inteligentă a locurilor de muncă folosind AI**
 
@@ -43,9 +43,11 @@ student.md va fi generat cu un prompt de catre opencode si rulat in GitHUB Actio
 
 Widget-ul de joburi **poate fi încorporat pe site-ul oricărei facultăți** printr-un simplu `<iframe>`. O singură linie de cod este suficientă:
 
+Înlocuiește `URL_DEPLOY` cu URL-ul propriu de GitHub Pages (ex: `https://peviitor-ro.github.io/ClujHackathon2026`).
+
 ```html
 <iframe
-  src="https://peviitor-ro.github.io/ClujHackathon2026/#/widget?tag=FACULTATE_TAG&title=Titlu&color=culoare"
+  src="URL_DEPLOY/#/widget?tag=FACULTATE_TAG&title=Titlu&color=culoare"
   width="100%"
   height="650px"
 ></iframe>

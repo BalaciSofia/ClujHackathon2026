@@ -23,7 +23,7 @@ Dacă găsești un job greșit etichetat în `jobs_100.json`:
 
 ### 3. Raportezi o problemă
 
-Deschide un [Issue](https://github.com/peviitor-ro/ClujHackathon2026/issues) cu:
+Deschide un [Issue](../../issues) cu:
 - descrierea problemei
 - cum poate fi reprodusă
 - capturi de ecran (dacă e cazul)

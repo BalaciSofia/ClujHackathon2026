@@ -23,9 +23,11 @@ Rutele se parsează în `App.jsx` via `window.location.hash` și un `hashchange`
 
 Widget-ul este arhitecturat pentru a fi randat **izolat**, expunând ruta `#/widget` care este consumată de site-urile universităților printr-un element `<iframe>`. Integrarea necesită doar o **singură linie de cod HTML**:
 
+Înlocuiește `URL_DEPLOY` cu URL-ul propriu de GitHub Pages (ex: `https://peviitor-ro.github.io/ClujHackathon2026`).
+
 ```html
 <iframe
-  src="https://peviitor-ro.github.io/ClujHackathon2026/#/widget?tag=NUME_TAG&title=Titlu&color=culoare&rounded=clasa"
+  src="URL_DEPLOY/#/widget?tag=NUME_TAG&title=Titlu&color=culoare&rounded=clasa"
   width="100%"
   height="650px"
   class="border-none bg-transparent"
