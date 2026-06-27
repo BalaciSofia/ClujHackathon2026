@@ -50,7 +50,7 @@ function HomePage() {
           </h1>
           <div className="flex items-center gap-2">
             <a
-              href="https://github.com/peviitor-ro/ClujHackathon2026"
+              href="https://github.com/peviitor-ro/jobs-widget"
               target="_blank"
               rel="noopener noreferrer"
               className="h-8 w-8 rounded-lg text-text hover:text-text-h border border-border hover:border-border/80 flex items-center justify-center transition-colors"
@@ -92,7 +92,7 @@ function HomePage() {
           <p className="text-sm leading-relaxed">
             Mergi pe{" "}
             <a
-              href="https://github.com/peviitor-ro/ClujHackathon2026"
+              href="https://github.com/peviitor-ro/jobs-widget"
               target="_blank"
               rel="noopener noreferrer"
               className="text-accent hover:underline font-medium"
@@ -200,7 +200,7 @@ function HomePage() {
         <div className="max-w-3xl mx-auto px-4 py-4 flex items-center justify-between text-xs text-text/60">
           <span>peViitor.ro — Cluj Hackathon 2026</span>
           <a
-            href="https://github.com/peviitor-ro/ClujHackathon2026"
+            href="https://github.com/peviitor-ro/jobs-widget"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-accent transition-colors"
