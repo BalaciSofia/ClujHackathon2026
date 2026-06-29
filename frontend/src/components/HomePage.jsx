@@ -30,7 +30,7 @@ function getWidgetCode(tag) {
   const base = window.location.origin + window.location.pathname.replace(/\/+$/, "");
   const t = tag || "NUME_TAG";
   return `<iframe
-  src="${base}/#/widget?tag=${t}&title=Titlu&color=culoare"
+  src="${base}/#/widget?tag=${t}&title=Titlu&color=%231D4ED8"
   width="100%"
   height="650px"
   style="border: none; background: transparent;"
@@ -221,7 +221,7 @@ function HomePage() {
                 <tr className="border-b border-border">
                   <td className="py-2 pr-4 font-mono text-accent">color</td>
                   <td className="py-2 pr-4">Culoarea temei (hex)</td>
-                  <td className="py-2 font-mono">%234f46e5</td>
+                  <td className="py-2 font-mono">%231D4ED8</td>
                 </tr>
               </tbody>
             </table>
