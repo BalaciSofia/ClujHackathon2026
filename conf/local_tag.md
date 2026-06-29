@@ -1,2 +1,2 @@
 UBBFL
-sursa: https://lett.ubbcluj.ro/curricula-licenta/curricula-2026-2029-licenta/
+sursa: https://litere.unitbv.ro/ro/programe-de-studii/licenta.html
