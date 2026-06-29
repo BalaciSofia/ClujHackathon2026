@@ -1,6 +1,6 @@
 # Structura fișierului `jobs.json`
 
-`jobs.json` este un array JSON care conține **100 de obiecte job**. Fiecare obiect reprezintă un anunț de loc de muncă agregat din diverse surse (ANOFM, OLX, bestjobs, publi24, jobviewtrack, hipo, etc.).
+`jobs.json` este un array JSON care conține joburile matcheate de agentul AI. Fiecare obiect reprezintă un anunț de loc de muncă agregat din API-ul peviitor.ro.
 
 ---
 
@@ -8,47 +8,31 @@
 
 | Câmp | Tip | Obligatoriu | Descriere |
 |------|-----|-------------|-----------|
-| `url` | `string` | da | Link-ul direct către anunțul original |
+| `url` | `string[]` | da | Link-ul direct către anunțul original (array cu un singur element) |
 | `title` | `string` | da | Titlul postului |
 | `company` | `string` | da | Numele companiei angajatoare |
-| `location` | `string[]` | da | Lista de orașe/locații (de obicei un singur element) |
-| `salary` | `string[]` | nu | Salariul exprimat ca string (ex: `"4000-6000 RON"`, `"1 RON"`) |
+| `location` | `string[]` | da | Lista de orașe/locații |
+| `salary` | `string[]` | nu | Salariul exprimat ca string (ex: `"4000-6000 RON"`) |
 | `date` | `string` (ISO 8601) | nu | Data publicării anunțului (ex: `"2026-05-22T00:00:00Z"`) |
-| `status` | `string` | da | Starea anunțului — întotdeauna `"published"` |
-| `_version_` | `number` | da | Identificator intern de versionare (probabil SolR) |
-| `_root_` | `string` | da | URL-ul rădăcină (de obicei identic cu `url`) |
+| `status` | `string` | da | Starea anunțului (ex: `"activ"`, `"published"`) |
 | `f_tag` | `string[]` | da | Tag-ul (tag-urile) de filtrare — vezi secțiunea dedicată |
+| `matchPercentage` | `number` | da | Scorul de potrivire (0-100) calculat de agentul AI |
+| `reason` | `string` | da | Explicația agentului pentru potrivire |
 
-### Exemple de obiecte
+### Exemplu
 
-**Cu salariu și dată:**
 ```json
 {
-  "url": "https://www.olx.ro/oferta/...",
-  "title": "Ajutor instalator aer condiționat",
-  "company": "KADIX CLIMA",
-  "location": ["Bucuresti"],
-  "salary": ["4000-6000 RON"],
-  "date": "2026-05-21T00:00:00Z",
-  "status": "published",
-  "_version_": 1865967876689625093,
-  "_root_": "https://www.olx.ro/oferta/...",
-  "f_tag": ["UBVFMIIA"]
-}
-```
-
-**Fără salariu și fără dată:**
-```json
-{
-  "url": "https://jobviewtrack.com/v2/...",
-  "title": "Femeie De Serviciu",
-  "company": "TEKOS EXPERT SRL",
-  "location": ["Sibiu"],
-  "date": "2026-05-13T00:00:00Z",
-  "status": "published",
-  "_version_": 1865967876686479360,
-  "_root_": "https://jobviewtrack.com/v2/...",
-  "f_tag": ["UTCNAC"]
+  "url": ["https://www.bestjobs.eu/loc-de-munca/..."],
+  "title": "Internship Insurance Officer",
+  "company": "TOYOTA STAR SRL",
+  "location": ["Voluntari, Romania"],
+  "salary": ["de la 785 până la 865 EUR/lună"],
+  "date": "2026-05-14T00:00:00Z",
+  "status": "activ",
+  "f_tag": ["UBBFPSE"],
+  "matchPercentage": 55,
+  "reason": "Rol implică interacțiune cu clienți, comunicare și negociere — skill-uri din aria mea (comunicare eficientă, relaționare)."
 }
 ```
 
@@ -60,37 +44,35 @@ Câmpul `f_tag` (array de string-uri) asociază fiecare job cu una sau mai multe
 
 ### Cum funcționează
 
-1. În `filter/` există fișiere de tip `NUME.md` care descriu **competențele** unei persoane (curiculum universitar, skill-uri tehnice, certificări).
-2. Un agent AI (definit în `agents/`) analizează fiecare anunț de job și, dacă skill-urile persoanei se potrivesc cu descrierea jobului, adaugă tag-ul respectiv în `f_tag`.
-3. Astfel, un job poate fi etichetat cu mai multe tag-uri dacă se potrivește cu mai multe persoane.
+1. În `filter/` există fișiere de tip `NUME.md` care descriu **competențele** unei persoane (curriculum universitar, skill-uri).
+2. Agentul AI (definit în `agents/student.md`) analizează fiecare anunț de job și, dacă skill-urile persoanei se potrivesc, adaugă tag-ul respectiv în `f_tag`.
+3. Joburile pot primi multiple tag-uri dacă se potrivesc cu mai multe persoane.
 
 ### Valorile curente
 
 | `f_tag` | Fișier filtru | Persoană / Profil |
 |---------|---------------|-------------------|
-| `"UTCNAC"` | `filter/UTCNAC.md` | Student/absolvent al **Facultății de Automatică și Calculatoare, UTCN** (Universitatea Tehnică Cluj-Napoca) — profil tehnic, automatică, informatică aplicată |
-| `"UBVFMIIA"` | `filter/UBVFMIIA.md` | Student/absolvent al **Facultății de Matematică și Informatică Aplicată, Universitatea Transilvania din Brașov** — profil informatică aplicată |
-
-### Exemplu cu tag-uri multiple
-
-```json
-"f_tag": ["UTCNAC", "UBVFMIIA"]
-```
-
-În acest caz, jobul se potrivește cu ambele persoane (deține competențe relevante pentru ambele profiluri).
+| `"UBBFPSE"` | `filter/UBBFPSE.md` | Student al **Facultății de Psihologie și Științe ale Educației, UBB** — profil psiho-pedagogic |
 
 ---
 
-## Surse de proveniență
+## Câmpurile `matchPercentage` și `reason`
 
-Joburile sunt agregate din următoarele platforme:
+Aceste câmpuri sunt adăugate de agentul AI după analizarea fiecărui job:
 
-- **ANOFM** — `https://mediere.anofm.ro/`
-- **OLX** — `https://www.olx.ro/`
-- **bestjobs** — `https://www.bestjobs.eu/`
-- **publi24** — `https://www.publi24.ro/`
-- **jobviewtrack** — URL-uri trackate (sursa originală poate varia)
-- **hipo** — `https://www.hipo.ro/`
-- **iajob** — `https://www.iajob.ro/`
-- **oferimdemunca** — `https://oferimdemunca.ro/`
-- **ceragon**, **hootsuite**, **mastercard**, **JTI**, **DIVERSEY**, etc. — cariere directe ale companiilor
+- **`matchPercentage`** — scor de la 0 la 100 care indică cât de bine se potrivește jobul cu skill-urile persoanei
+- **`reason`** — explicație narativă a agentului, menționând skill-urile potrivite și cele lipsă
+
+---
+
+## Generare
+
+Joburile sunt generate automat prin scriptul `scripts/fetch_agent_jobs.mjs` care:
+
+1. Citește tag-ul din `conf/local_tag.md`
+2. Citește profilul agentului din `agents/student.md`
+3. Generează cuvinte cheie de căutare pe baza profilului
+4. Interoghează API-ul peviitor.ro (`https://api.peviitor.ro/v1/search/`)
+5. Extrage descrierile joburilor
+6. Trimite fiecare batch la agentul AI pentru evaluare
+7. Salvează joburile potrivite în `jobs.json`
