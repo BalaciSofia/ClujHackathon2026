@@ -2,10 +2,35 @@ import { useEffect, useState } from "react";
 import Widget from "./Widget";
 import { Moon, Sun, Copy, Check } from "lucide-react";
 
-function getWidgetCode() {
+function getRepoInfo() {
+  const path = window.location.pathname.replace(/\/+$/, "");
+  const parts = path.split("/").filter(Boolean);
+  if (parts.length >= 2) {
+    return { owner: parts[0], repo: parts[1] };
+  }
+  const hostParts = window.location.hostname.split(".");
+  if (hostParts.length >= 2 && hostParts[0] !== "localhost" && hostParts[0] !== "127") {
+    return { owner: hostParts[0], repo: path.slice(1).split("/")[0] || "" };
+  }
+  return null;
+}
+
+const REPO_INFO = getRepoInfo();
+const TAG_URL = REPO_INFO
+  ? `https://raw.githubusercontent.com/${REPO_INFO.owner}/${REPO_INFO.repo}/main/conf/local_tag.md`
+  : null;
+
+function parseTag(text) {
+  if (!text) return null;
+  const lines = text.trim().split("\n");
+  return lines[0].trim() || null;
+}
+
+function getWidgetCode(tag) {
   const base = window.location.origin + window.location.pathname.replace(/\/+$/, "");
+  const t = tag || "NUME_TAG";
   return `<iframe
-  src="${base}/#/widget?tag=NUME_TAG&title=Titlu&color=culoare"
+  src="${base}/#/widget?tag=${t}&title=Titlu&color=culoare"
   width="100%"
   height="650px"
   style="border: none; background: transparent;"
@@ -16,7 +41,26 @@ function HomePage() {
   const [theme, setTheme] = useState(() => {
     return localStorage.getItem("peviitor-theme") || "light";
   });
+  const [tag, setTag] = useState("NUME_TAG");
+  const [loading, setLoading] = useState(true);
   const [copied, setCopied] = useState(false);
+
+  useEffect(() => {
+    if (!TAG_URL) {
+      setLoading(false);
+      return;
+    }
+    const controller = new AbortController();
+    fetch(TAG_URL, { signal: controller.signal })
+      .then((r) => r.text())
+      .then((text) => {
+        const parsed = parseTag(text);
+        if (parsed) setTag(parsed);
+      })
+      .catch(() => {})
+      .finally(() => setLoading(false));
+    return () => controller.abort();
+  }, []);
 
   useEffect(() => {
     const root = document.documentElement;
@@ -32,7 +76,7 @@ function HomePage() {
     setTheme(theme === "light" ? "dark" : "light");
   };
 
-  const widgetCode = getWidgetCode();
+  const widgetCode = getWidgetCode(tag);
 
   const handleCopy = () => {
     navigator.clipboard.writeText(widgetCode).then(() => {
@@ -133,8 +177,8 @@ function HomePage() {
             4. Încorporează pe site-ul facultății
           </h3>
           <p className="text-sm leading-relaxed">
-            Adaugă codul de mai jos pe site-ul facultății, înlocuind parametrii
-            cu valorile specifice:
+            Adaugă codul de mai jos pe site-ul facultății (tag-ul este deja
+            completat automat):
           </p>
 
           <div className="relative">
@@ -167,7 +211,7 @@ function HomePage() {
                 <tr className="border-b border-border">
                   <td className="py-2 pr-4 font-mono text-accent">tag</td>
                   <td className="py-2 pr-4">Tag-ul facultății</td>
-                  <td className="py-2 font-mono">UBBFMI</td>
+                  <td className="py-2 font-mono">{loading ? "..." : tag}</td>
                 </tr>
                 <tr className="border-b border-border">
                   <td className="py-2 pr-4 font-mono text-accent">title</td>
